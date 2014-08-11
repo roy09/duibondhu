@@ -50,6 +50,10 @@ handlers:
   static_files: static/index.html
   upload: static/index.html
 
+- url: /.*
+    static_files: static/index.html
+    upload: static/index.html
+
 libraries:
 - name: webapp2
   version: "2.5.2"
