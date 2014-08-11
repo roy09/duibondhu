@@ -14,12 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import webapp2
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp.util import run_wsgi_app
 
-class MainHandler(webapp2.RequestHandler):
+class NotFoundPageHandler(webapp.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        self.error(404)
+        self.response.out.write('<Your 404 error html page>')
 
-app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
+application = webapp.WSGIApplication([('/.*', NotFoundPageHandler)],
+                                     debug=True)
+
+def main():
+    run_wsgi_app(application)
+
+if __name__ == "__main__":
+    main()
