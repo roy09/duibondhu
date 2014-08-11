@@ -1,0 +1,271 @@
+/*********************
+GENERAL 
+*********************/
+
+body{
+  font-family:'Open Sans', sans-serif;
+}
+
+#wrapper{
+  max-width:940px;
+  margin:0 auto;
+  margin-bottom:35px;
+  padding: 0 5%;
+}
+
+/*test**********/
+
+#wrapper2{
+  
+  max-width:940px;
+  margin:0 auto;
+  padding: 0 5%;
+  clear: both;
+}
+
+.line-separator{
+
+height:1px;
+
+width: 250px;
+
+margin: 0 auto;
+
+background:#989898;
+
+/*border-bottom:1px solid #313030;*/
+
+}
+
+/************/
+
+a {
+  text-decoration:none;
+}
+
+img{
+  max-width:100%; /*pixel use korar cheye % use kora better for the reason that it adopts the screen size according to its parent if a % is used instead of a pixel unit.*/
+}
+h3{
+  margin:0 0 1em 0;
+  
+}
+
+
+
+
+/*********************
+HEADING
+*********************/
+header{
+  float:left;
+  margin:0 0 30px 0; /*header er nicher ongsho theke 30px kheye nicche, try with 300 to better understand*/
+  padding:5px 0 0 0;
+  width:100%;
+}
+#logo{
+  text-align:center;
+  margin:0;
+}
+
+h1{
+  font-family:'Changa One', sans-serif;
+  margin:15px 0;
+  font-size:1.75em;
+  font-weight:normal; /*unbold*/
+  line-height:0.8em;
+}
+h2{
+  font-size:0.75em;
+  margin:-5px 0 0; /* -5px shonger header er dike tene aane*/
+  font-weight:normal;
+}
+
+
+
+/*********************
+NAVIGATION
+*********************/
+nav{
+  text-align:center;
+  padding:10px 0; /*nav er ongsher upore nicher padding*/
+  margin:28px 0 0;
+}
+
+nav ul{
+  list-style:none;
+  margin:0px 10px;
+  padding:0;
+
+}
+
+nav li{
+  display:inline-block; /*eki line e shob nav */
+}
+
+
+nav a{
+  font-weight:800; /*font gets way cooler*/
+  padding:15px 10px; /*nav er list elements er majhe gap*/
+}
+
+
+/*********************
+FOOTER
+*********************/
+footer{
+  font-size:0.75em;
+  text-align:center;
+  clear:both; /*uporer float kora item etake aar float koraite parbena*/
+  padding-top:50px;
+  color:#ccc;
+  
+}
+.social-icon{ /*selects the social-icon class from index.html*/ 
+  width:20px;
+  height:20px;
+  margin:0 3px; /*space between the two icons*/
+}
+
+
+
+
+
+/***********************
+PAGE: PORTFOLIO
+************************/
+#gallery{
+  margin:0;
+  padding:0;
+  list-style:none; /*bulletpoints thakbena*/
+}
+
+#gallery li{
+  float:left;
+  width:45%; /*takes 45% of the mother content, jei screen e dekhacche tar 45% kore jayga niye dekhabe*/
+  margin:2.5%;
+  background-color:#f5f5f5;
+  color:#bdc3c7;
+}
+
+#gallery li a p{
+  margin:0;
+  padding:5%;
+  font-size:0.75em;
+  color:#bdc3c7;
+}
+
+/*********************
+PAGE: ABOUT
+*********************/
+
+.profile-photo{
+  display:block;
+  max-width:150px;
+  margin:0 auto 30px;
+  border-radius:100%;
+}
+
+/*********************
+PAGE: CONTACT
+*********************/
+
+.contact-info{
+  list-style:none;
+  padding:0;
+  margin:0;
+  font-size:0.9em;
+}
+
+.contact-info a{
+  display:block;
+  min-height:20px;
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px; /*otherwise icon gila lekhar upor lege thakbe*/
+  margin:0 0 10px;
+}
+
+.contact-info li.phone a{ /*contact info class er bhitore list item er phone class er anchor element ke select kortese*/
+  background-image:url('../img/phone.png');
+  
+}
+.contact-info li.mail a{
+  background-image:url('../img/mail.png');
+  
+}
+.contact-info li.twitter a{
+  background-image:url('../img/twitter.png');
+  
+}
+
+
+
+
+
+/*********************
+COLORS
+*********************/
+
+/* site body*/
+body{
+  background-color:#fff;
+  color: #999;
+}
+
+/*green header*/
+header{
+  
+  background:#6ab47b;
+  border-color:#599a68;
+
+}
+
+nav{
+
+ /* background:#599a68;*/
+ 
+}
+
+h1, h2{
+  color:#fff;
+}
+
+a{
+  color:#6ab47b;
+
+}
+
+/*nav link*/
+nav a, nav a:visited {
+  color:#fff;
+}
+
+/*selected nav link*/
+nav a.selected, nav a:hover{
+  color:#32673f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
